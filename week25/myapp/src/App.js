@@ -4,11 +4,9 @@ import BarChart from './components/BarChart'
 import './App.css';
 
 const App = () => {
-    return ( < div >
-        <
-        BarChart / >
-        <
-        /div>
+    return ( <div>
+        <BarChart />
+        </div>
     );
 }
 
