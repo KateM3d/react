@@ -1,0 +1,25 @@
+.card-single {
+    display: flex;
+    flex-flow: column;
+    width: 40vw;
+    background-color: rgb(218, 243, 127);
+    padding: 20px;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.page-inner {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+    margin: 50px;
+}
+
+.hero-image {
+    width: 250px;
+}
+
+body {
+    background-color: black;
+}
