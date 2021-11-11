@@ -1,4 +1,7 @@
+import React from "react";
+
 import "./App.css";
+import "./components/Card.scss";
 import Card from "./components/Card";
 
 let items = [
@@ -35,15 +38,18 @@ let items = [
 function App() {
   return (
     <div className="App">
-      {items.map((item) => (
-        <Card
-          classTop={item.classTop}
-          classCenter={item.classCenter}
-          planName={item.planName}
-          cost={item.cost}
-          speed={item.speed}
-        />
-      ))}
+      <div className="container">
+        {items.map((item) => (
+          <Card
+            key={item.classTop}
+            classTop={item.classTop}
+            classCenter={item.classCenter}
+            planName={item.planName}
+            cost={item.cost}
+            speed={item.speed}
+          />
+        ))}
+      </div>
     </div>
   );
 }
