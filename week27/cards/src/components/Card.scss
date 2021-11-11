@@ -1,9 +1,9 @@
 $fontColor: #fff;
 $fontColorBottom: #000000;
-$heightTop: 100px;
+$heightTop: 75px;
 $heightCenter: 150px;
-$heightSpeed: 100px;
-$heightTraffic: 50px;
+$heightSpeed: 75px;
+$heightTraffic: 100px;
 @mixin displayCardInner {
     display: flex;
     flex-direction: column;
@@ -22,6 +22,14 @@ $heightTraffic: 50px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 10vh;
+}
+
+.circle {
+    border: 5px solid #c4558e;
+}
+
+.number {
+    font-size: 50px;
 }
 
 .card {

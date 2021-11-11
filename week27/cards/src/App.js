@@ -11,6 +11,7 @@ let items = [
     planName: "Unlimited 300",
     cost: 300,
     speed: "10Mb/sec",
+    selected: false,
   },
   {
     classTop: "cardTop_450",
@@ -18,6 +19,7 @@ let items = [
     planName: "Unlimited 450",
     cost: 450,
     speed: "10Mb/sec",
+    selected: false,
   },
   {
     classTop: "cardTop_550",
@@ -25,6 +27,7 @@ let items = [
     planName: "Unlimited 550",
     cost: 550,
     speed: "10Mb/sec",
+    selected: true,
   },
   {
     classTop: "cardTop_1000",
@@ -32,6 +35,7 @@ let items = [
     planName: "Unlimited 1000",
     cost: 1000,
     speed: "10Mb/sec",
+    selected: false,
   },
 ];
 
@@ -47,6 +51,7 @@ function App() {
             planName={item.planName}
             cost={item.cost}
             speed={item.speed}
+            selected={item.selected}
           />
         ))}
       </div>
