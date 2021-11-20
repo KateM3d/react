@@ -11,8 +11,8 @@ function Card(props) {
 
   return (
     <div
-      onClick={handleSelection}
-      className={"cardBody" + (props.selected === true ? " circle" : "")}
+      onMouseOver={handleSelection}
+      className={"cardBody" + (isSelected === true ? " circle" : "")}
     >
       <div className={`cardTop_${props.cost}`}>Unlimited {props.cost}</div>
       <div className={`cardCenter_${props.cost}`}>
