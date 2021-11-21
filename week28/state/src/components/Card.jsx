@@ -6,12 +6,17 @@ function Card(props) {
   const [isSelected, setIsSelected] = useState(false);
 
   let handleSelection = () => {
+    let cards = document.getElementsByClassName("cardBody");
+
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].classList.remove("circle");
+    }
     setIsSelected(!isSelected);
   };
 
   return (
     <div
-      onMouseOver={handleSelection}
+      onClick={handleSelection}
       className={"cardBody" + (isSelected === true ? " circle" : "")}
     >
       <div className={`cardTop_${props.cost}`}>Unlimited {props.cost}</div>
