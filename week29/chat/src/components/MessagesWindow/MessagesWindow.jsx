@@ -4,7 +4,7 @@ import "./MessagesWindow.scss";
 function MessagesWindow() {
   return (
     <div>
-      <ul class="newMessages"></ul>
+      <ul className="newMessages"></ul>
     </div>
   );
 }
