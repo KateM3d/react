@@ -5,8 +5,8 @@ function TypeWindow(props) {
   return (
     <div className="inputText">
       <input
-        value={props.comments}
-        onChange={props.handleOnChange}
+        value={props.value}
+        onChange={props.onChange}
         className="inputMessage"
         type="text"
         placeholder="Type your message here..."
