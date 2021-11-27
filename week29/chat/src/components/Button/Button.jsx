@@ -1,17 +1,11 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import "./Button.scss";
 
-function Button() {
-  const [send, setSend] = useState(false);
-  const inputField = document.querySelector(".inputMessage");
-  let postMessage = () => {
-    setSend(!send);
-    console.log("send");
-  };
+function Button(props) {
   return (
     <>
-      <button onClick={postMessage} className="btn">
+      <button onClick={props.onClick} className="btn">
         Send
       </button>
     </>

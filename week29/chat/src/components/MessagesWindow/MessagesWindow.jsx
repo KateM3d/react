@@ -1,10 +1,14 @@
 import React from "react";
 import "./MessagesWindow.scss";
 
-function MessagesWindow() {
+function MessagesWindow(props) {
   return (
     <div>
-      <ul className="newMessages"></ul>
+      <ul>
+        {props.comments.map((c) => (
+          <li>{c}</li>
+        ))}
+      </ul>
     </div>
   );
 }
